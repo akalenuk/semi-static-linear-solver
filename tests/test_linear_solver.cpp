@@ -1,4 +1,4 @@
-#include "../linear_equations.hpp"
+#include "../semi-static-linear-solver.hpp"
 
 #include <iostream>
 #include <assert.h>
@@ -13,13 +13,6 @@ int main(){
     assert(ss_solved);
     assert(ss_verified);
 
-    // iterative projections solution
-    x = std::array<double, 3>{0.0, 0.0, 0.0};
-    auto ip_solved = linear_equations::iterative_projections::solve<3>(a, b, x);
-    auto ip_verified = linear_equations::verify<3>(a, b, x);
-    assert(ip_solved);
-    assert(ip_verified);
-
-    std::cout << " + Linear equations solvers are fine." << std::endl;
+    std::cout << " + Linear equations solver is fine." << std::endl;
     return 0;
 }
