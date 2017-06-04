@@ -9,6 +9,14 @@ int main(int argc, char**){
     const auto b = std::array<double, 3>{1.0, 4.0, 9.3};
     auto x = std::array<double, 3>{0.0, 0.0, 0.0};
     a[0][0] += static_cast<double>(argc - 1); // side effect to prevent optimization
+    a[0][1] += static_cast<double>(argc - 1); // side effect to prevent optimization
+    a[0][2] += static_cast<double>(argc - 1); // side effect to prevent optimization
+    a[1][0] += static_cast<double>(argc - 1); // side effect to prevent optimization
+    a[1][1] += static_cast<double>(argc - 1); // side effect to prevent optimization
+    a[1][2] += static_cast<double>(argc - 1); // side effect to prevent optimization
+    a[2][0] += static_cast<double>(argc - 1); // side effect to prevent optimization
+    a[2][1] += static_cast<double>(argc - 1); // side effect to prevent optimization
+    a[2][2] += static_cast<double>(argc - 1); // side effect to prevent optimization
     auto ss_solved = linear_equations::semi_static::solve<3>(a, b, x);
     assert(ss_solved);
 
