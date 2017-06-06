@@ -38,6 +38,6 @@ Results in this disassembly:
 
     -rw-rw-r-- 1 okaleniuk okaleniuk 3918 чер  4 11:37 ./tests/generate_static_partially.s
     
-Part of it that could have been precomputed in compile time is precomputed, and the part that could not - isn't. This means that for the sytem of only three equation you can make it generate 4096 solvers of which 4095 would be faster than the completely run-time solution.
+Part of it that could have been precomputed in compile time is precomputed, and the part that could not - isn't. This means that for the sytem of only three equations you can make it generate 4096 solvers of which 4095 would be faster than the completely run-time solution.
 
 How cool is that!  
