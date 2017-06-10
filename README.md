@@ -1,5 +1,5 @@
 # semi-static-linear-solver
-Sytem of linear equtions semi-static solver
+System of linear equations semi-static solver
 
 Generates effective solution code for every combination of static and dynamic data.
 For instance, this was generated for the same matrix and a same vector, but with different side-effects deliberately untroduced to prevent optimization:
