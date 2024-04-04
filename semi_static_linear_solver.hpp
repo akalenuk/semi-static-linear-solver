@@ -5,7 +5,7 @@
 
 namespace linear_equations{
 
-    constexpr double SMALL_ENOUGH = std::sqrt(std::numeric_limits<double>::epsilon());
+    static const double SMALL_ENOUGH = std::sqrt(std::numeric_limits<double>::epsilon());
 
     namespace semi_static{
         template <int I, int J, int K, int N>
